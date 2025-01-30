@@ -21,7 +21,8 @@ git clone <repository-url>
 cd <repository-folder>
 ```
 
-### 2. Create and Activate Virtual Environment
+### 2. Create and Activate Virtual Environment (Optional)
+if you don't want to make any change into your real python library.
 ```sh
 python -m venv venv
 ```
@@ -33,7 +34,10 @@ python -m venv venv
   ```sh
   source venv/bin/activate
   ```
-
+### Run 
+```sh
+pip install -r requirements.txt
+```
 
 ## Running the Script
 ```sh
