@@ -34,7 +34,7 @@ python -m venv venv
   ```sh
   source venv/bin/activate
   ```
-### Run 
+### 3. Run 
 ```sh
 pip install -r requirements.txt
 ```
