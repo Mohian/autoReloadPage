@@ -20,7 +20,7 @@ def load_page(url, timeout=2):
                 bell_thread = threading.Thread(target=ring_bell)
                 bell_thread.start()
                 print("Press Enter to stop the ringing...")
-                sys.stdin.read(1)  # Wait for user input
+                input()  # Wait for user input
                 stop_ringing = True
                 bell_thread.join()
                 break
@@ -33,9 +33,9 @@ def load_page(url, timeout=2):
 if __name__ == "__main__":
     stop_ringing = True  # Control flag for bell ringing thread
     
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <URL>")
-        sys.exit(1)
+    print("Insert your URL:")
+    url = input().strip()  # Prompt user for URL input
     
-    url = sys.argv[1]  # Get URL from command line argument
+    print(f"Are you Sure: {url} is your URL?")
+    input("Press Enter to start...")
     load_page(url)
