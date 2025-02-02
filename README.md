@@ -15,10 +15,15 @@ python --version
 ```
 
 ## Setup
-### 1. Clone the Repository
+### 1. Clone the Repository (if you have ssh setup)
 ```sh
-git clone <repository-url>
-cd <repository-folder>
+git clone git@github.com:Mohian/autoReloadPage.git
+cd autoReloadPage
+```
+### 1. Clone the Repository (using HTTPS)
+```sh
+git clone https://github.com/Mohian/autoReloadPage.git
+cd autoReloadPage
 ```
 
 ### 2. Create and Activate Virtual Environment (Optional)
